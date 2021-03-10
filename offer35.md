@@ -18,8 +18,6 @@ https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/
 
 ### 方法1 
 
-时间复杂度 O(n2) 空间复杂度O(n)
-
 ```java
 /*
 // Definition for a Node.
