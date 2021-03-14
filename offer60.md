@@ -69,6 +69,7 @@ public double[] dicesProbability(int n) {
                 dp[j] = 0;
                 for(int cur = 1; cur <= 6; cur++) {
                   // 范围发生了变化，合法的范围每次随i右移 第二次从转移1-6 第三次只能从2-12
+                  // 投掷i次骰子得到的最小的点数为i，所以第i-1次中小于i-1的点数是越界的
                     if(j - cur < i - 1) break;
                     dp[j] += dp[j - cur];
                 }
